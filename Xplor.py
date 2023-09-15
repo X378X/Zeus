@@ -51,19 +51,19 @@ except Exception as e:
 for Xr in range (10000):		
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.randrange(1, 13)
-	c='VOG-L'	
+	c='Pixel 2 Build/OPM2.171026.006.G1; wv'	
 	d=random.randrange(20, 29)
 	e='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	f=random.randrange(73,199)
+	f=random.randrange(100,150)
 	g='0'
-	h=random.randrange(4200,5999)
-	i=random.randrange(40,99)
-	j='Mobile Safari/537.36 OPR/'
+	h=random.randrange(4999,5999)
+	i=random.randrange(100,200)
+	j='Mobile Safari/537.36 BingWeb/'
 	k=random.randrange(50,99)
 	l=random.randrange(0,9)
 	m=random.randrange(2000,4999)
 	n=random.randrange(50000,59999)
-	uaku=f'{a} {b}; {c}{d}) {e}{f}.{g}.{h}.{i} {j}{k}.{l}.{m}.{n}'
+	uaku=f'{a} {b}; {c}) {e}{f}.{g}.{h}.{i} {j}{k}.{l}.{m}.{n}'
 	ugen.append(uaku)
 
 #--------[ GENERATE-USER-AGENT ]----------#
