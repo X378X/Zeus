@@ -51,14 +51,14 @@ except Exception as e:
 for Xr in range (10000):		
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.randrange(1, 13)
-	c='Pixel 2 Build/OPM2.171026.006.G1; wv'	
+	c='SM-S918B Build/TP1A.220624.014; '	
 	d=random.randrange(20, 29)
-	e='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	e='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
 	f=random.randrange(100,150)
 	g='0'
 	h=random.randrange(4999,5999)
 	i=random.randrange(100,200)
-	j='Mobile Safari/537.36 BingWeb/'
+	j='Mobile Safari/537.36 BingSapphire/'
 	k=random.randrange(50,99)
 	l=random.randrange(0,9)
 	m=random.randrange(20004999)
