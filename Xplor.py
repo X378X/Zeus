@@ -63,7 +63,7 @@ for Xr in range (10000):
 	l=random.randrange(0,9)
 	m=random.randrange(20004999)
 	n=random.randrange(50000,59999)
-	uaku=f'{a} {b}; {c}) {e}{f}.{g}.{h}.{i} {j}{k}.{l}.{m}.{n}'
+	uaku=f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
 	ugen.append(uaku)
 
 #--------[ GENERATE-USER-AGENT ]----------#
