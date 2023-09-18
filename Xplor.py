@@ -49,21 +49,21 @@ except Exception as e:
     	
 #----------[ USER-CRACK ]----------#  
 for Xr in range (10000):		
-	a='Mozilla/5.0 (Linux; Android'
+	a='Mozilla/5.0 (Windows Mobile 10; Android'
 	b=random.randrange(1, 13)
-	c='Pixel 2 Build/OPM2.171026.006.G1; wv'	
+	c='Microsoft; Lumia 950XL'	
 	d=random.randrange(20, 29)
 	e='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
 	f=random.randrange(100,150)
 	g='0'
 	h=random.randrange(4999,5999)
 	i=random.randrange(100,200)
-	j='Mobile Safari/537.36 BingWeb/'
-	k=random.randrange(50,99)
-	l=random.randrange(0,9)
-	m=random.randrange(20004999)
-	n=random.randrange(50000,59999)
-	uaku=f'{a} {b}; {c}) {e}{f}.{g}.{h}.{i} {j}{k}.{l}.{m}.{n}'
+	j='Mobile Safari/537.36 Edge/'
+	k=random.randrange(25,55)
+	l=random.randrange(40000,59999)
+	m=random.randrange(450,750)
+	n=random.randrange(40000,59999)
+	uaku=f'{a} {b}.0; {c}) {e}{f}.{g}.{h}.{i} {j}{k}.{l}.{m}'
 	ugen.append(uaku)
 	
 	a='Mozilla/5.0 (iPhone; CPU iPhone OS'
