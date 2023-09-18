@@ -51,19 +51,53 @@ except Exception as e:
 for Xr in range (10000):		
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.randrange(1, 13)
-	c='SM-S918B Build/TP1A.220624.014; '	
+	c='Pixel 2 Build/OPM2.171026.006.G1; wv'	
 	d=random.randrange(20, 29)
-	e='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	e='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
 	f=random.randrange(100,150)
 	g='0'
 	h=random.randrange(4999,5999)
 	i=random.randrange(100,200)
-	j='Mobile Safari/537.36 BingSapphire/'
+	j='Mobile Safari/537.36 BingWeb/'
 	k=random.randrange(50,99)
 	l=random.randrange(0,9)
 	m=random.randrange(20004999)
 	n=random.randrange(50000,59999)
-	uaku=f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
+	uaku=f'{a} {b}; {c}) {e}{f}.{g}.{h}.{i} {j}{k}.{l}.{m}.{n}'
+	ugen.append(uaku)
+	
+	a='Mozilla/5.0 (iPhone; CPU iPhone OS'
+	b=random.randrange(1, 13)
+	c='like Mac OS X'	
+	d=random.randrange(20, 29)
+	e='AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/'
+	f=random.randrange(100,150)
+	g='0'
+	h=random.randrange(4999,5999)
+	i=random.randrange(100,200)
+	j='Mobile/15E148 Safari/604.1'
+	k=random.randrange(50,99)
+	l=random.randrange(0,9)
+	m=random.randrange(20004999)
+	n=random.randrange(50000,59999)
+	uaku=f'{a} 16_0 {c}) {e}{f}.{g}.{h}.{i} {j}'
+	ugen.append(uaku)
+	
+	a='Mozilla/5.0 (Windows NT'
+	b=random.randrange(1, 13)
+	c='Win64; x64'	
+	d=random.randrange(20, 29)
+	e='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	f=random.randrange(100,150)
+	g='0'
+	h=random.randrange(4999,5999)
+	i=random.randrange(100,200)
+	j='Safari/537.36'
+	k=random.randrange(50,99)
+	l=random.randrange(0,9)
+	m=random.randrange(20004999)
+	n=random.randrange(50000,59999)
+	uaku=f'{a} {b}.0; {c}) {e}{f}.{g}.{h}.{i} {j}'
 	ugen.append(uaku)
 
 #--------[ GENERATE-USER-AGENT ]----------#
