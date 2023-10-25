@@ -45,18 +45,16 @@ for xd in range(10000):
 
 
     aa='Mozilla/5.0 (Linux; Android'
-    b=random.choice(['iPhone','Android','BlackBerry','Nokia','Huawei','Andromax','Smartfren'])
-    jk=random.choice(['pt','id','tr','de','fr','us','es'])
+    b=random.choice(['6','7','8','9','10','11','12'])
     c='Redmi Note 9 Pro)'
-    e=random.randrange(1, 25)
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(11111,99999)
+    h=random.randrange(73,100)
     i='0'
-    j=random.randrange(190,195)
-    k=random.randrange(260,285)
-    ko=random.randrange(4,12)
-    op=random.randrange(150,250)
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
     l='Mobile Safari/537.36'
     uaku2=(f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36')
     ugen.append(uaku2)
