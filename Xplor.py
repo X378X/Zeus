@@ -118,7 +118,7 @@ def back():
 def banner():
 	nazri_ganteng('=' * 40)
 	print(f"""""")
-	nazri_ganteng(f"""(=)PREMIUM\n(=)Whatsapp:{M}081221523195\n(=){P}XTC|CODETEAM""")
+	nazri_ganteng(f"""(=)PREMIUM\n(=)Whatsapp:{M} Private\n(=){P}GHS|PGSOFT""")
 	nazri_ganteng('=' * 40)
 #--------------------[ MASUK ]--------------#
 def login():
